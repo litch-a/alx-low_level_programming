@@ -2,7 +2,7 @@
 
 /**
  * main - main block
- * Description: Program that prints alphabet in lowercase
+ * print_alphabet - a function that prints the alphabet, in lowercase
  * Return: 0
  */
 
