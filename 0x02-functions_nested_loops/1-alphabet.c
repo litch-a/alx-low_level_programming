@@ -2,7 +2,7 @@
 
 /**
  * main - main block
- * Description: Program that prints the alphabet, in lowercase, followed by a new line
+ * Description: Program that prints alphabet in lowercase
  * Return: 0
  */
 
