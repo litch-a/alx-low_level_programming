@@ -1,6 +1,7 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  * main - entry point
  * @argc: number of argument
@@ -10,15 +11,25 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b;
+	int sum = 0, i = 1, k = 0, l = 0;
+	char j;
 
-	if (argc != 3)
+	for (; i < argc; i++)
 	{
-		printf("Error\n");
-		return (1);
+		l = strlen(argv[i]);
+		k = 0;
+		while (k < l)
+		{
+			j = argv[i][k];
+			if (j < '0' || j > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+			k++;
+		}
+		sum += atoi(argv[i]);
 	}
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-	printf("%d\n", a * b);
+	printf("%d\n", sum);
 	return (0);
 }
